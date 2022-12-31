@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Failed</title>
+    <style>
+      .body {
+        background-color: grey;
+      }
+    </style>
+    <!--BOOTSTRAP CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Subscription Failed</h1>
+      <p class="lead">
+        Your credentials are wrong please write proper account information and
+        try to subscribe again
+      </p>
+      <hr class="my-4" />
+      <form action="/fail" method="post">
+        <button type="submit" name="button" class="btn btn-lg btn-dark">
+          Try Again
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
